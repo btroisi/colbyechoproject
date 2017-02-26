@@ -1,0 +1,30 @@
+
+h1{
+
+	color: royalblue;
+	font-family: Ludica Sans Unicode;
+	text-align: center;
+	font-size: 48pt;
+	font-weight: bold;
+	
+}
+
+
+h2{
+	font-style: italic;
+	font-size: 12pt;
+	text-align: center;
+}
+
+p{
+	background-color: royalblue;
+	color: white;
+	font-family: Times New Roman;
+	text-align: center;
+}
+
+.imgctr {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}

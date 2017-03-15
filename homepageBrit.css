@@ -1,0 +1,197 @@
+/* 
+file: homepage.css
+Written by: Brit Biddle
+March 14, 2017
+CS325 Final Project
+ */
+
+h1{
+
+	color: #0E1961;
+	font-family: "Baskerville";
+	text-align: center;
+	font-size: 58pt;
+	font-weight: normal;
+	margin-bottom: 2px;
+	margin-top: 4px;
+}
+
+h1 a{
+	text-decoration: none;
+	color: #0E1961;
+}
+
+
+h2{
+	font-family: "Baskerville";
+	
+	font-size: 12pt;
+	text-align: center;
+	font-weight: normal;
+}
+
+h3{
+	font-family: "Baskerville";
+	font-weight: normal;
+	font-size: 20pt;
+	margin-bottom: 0px;
+	color: #0E1961;
+}
+
+h3 a:hover{
+	color: #0E1961;
+	text-decoration: underline;
+}
+
+.featureStory {
+	float: left;
+	width:40%;
+	height: 420px;
+	border-bottom: 1px solid #cdd1d6;
+	border-left: 1px solid #cdd1d6;
+	border-right: 1px solid #cdd1d6;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 0px;
+
+}
+
+.sideStory {
+	float: left;
+	width:15%;
+	height: 420px;
+	border-bottom: 1px solid #cdd1d6;
+	border-left: 1px solid #cdd1d6;
+	border-right: 1px solid #cdd1d6;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 0px;
+
+}
+
+.snippet {
+	font-family: Times New Roman;
+	font-weight: normal;
+	font-size: 14pt;
+	color: #60646b;
+	padding-top: 0px;
+	margin-bottom: 0px;
+}
+
+.rightStory {
+	height: 129px;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #cdd1d6;
+
+}
+
+.rightStory h3 {
+	font-family: "Baskerville";
+	font-weight: normal;
+	font-size: 15pt;
+	margin-bottom: 0px;
+	color: #0E1961;
+}
+
+.topic {
+	font-family: Times New Roman;
+	font-weight: bold;
+	font-size: 8pt;
+	margin-bottom: 0px;
+	color: #0E1961;
+}
+
+.rightSection {
+	float: left;
+	width:15%;
+	border-left: 1px solid #cdd1d6;
+	border-right: 1px solid #cdd1d6;
+	
+}
+
+.date {
+	font-family: Times New Roman;
+	font-weight: normal;
+	font-size: 8pt;
+	color: #60646b;
+	text-align: right;
+}
+
+.subTitle {
+	font-family: Times New Roman;
+	font-weight: normal;
+	font-size: 10pt;
+	color: #60646b;
+	padding-top: 0px;
+	margin-bottom: 0px;
+}
+
+.headText{
+	background-color: white;
+	color: #0E1961;
+	font-family: Times New Roman;
+	text-align: left;
+	word-spacing: 30px;
+	border-bottom: 2px solid #cdd1d6;
+	padding-bottom: 8px;
+}
+
+.headText a:hover {
+	text-decoration: underline;
+}
+
+.imgctr {
+	text-align: center;
+    display: block; 
+}
+
+.social {
+	position: fixed;
+    top:0;
+    right:0;
+}
+
+
+.topHead {
+	
+ 	text-align: left;
+ 	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: grey;
+}
+
+/*  make menu bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+	float: left;
+	text-align: center; 
+	border-bottom: 1px solid #0E1961;
+	border-top: 1px solid #0E1961;
+
+}
+
+li a {
+    display: block;
+    color: #0E1961;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: Times New Roman;
+}
+
+/* Change the menu link color on hover */
+li a:hover {
+    background-color: #0E1961;
+    color: white;
+}

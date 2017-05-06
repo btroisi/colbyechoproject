@@ -1,0 +1,418 @@
+<!-- 
+file: homepage.html 
+Written by: Brit Biddle
+March 13, 2017
+CS325 Final Project
+
+-->
+
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title> The Colby Echo</title>
+		<link rel="icon" href="images/EchoBrowserLogo.jpg">
+		<link href="homepageBrit.css" type="text/css" rel="stylesheet"/>
+		<link href="sidebar.css" type="text/css" rel="stylesheet"/>
+		<link href="aboutpage.css" type="text/css" rel="stylesheet"/>
+		<!-- link to your script file here -->
+		<script src="echo.js" type="text/javascript"></script>
+	
+	</head>
+	
+	<body>
+		<!-- 
+		code for top menu begins
+		 -->
+		<span class = "topHead">
+		<p class = "headText"> <a href="aboutpage.html"> About</a> <a href="contactus.html">Contact</a> <a href="https://drive.google.com/file/d/0B1dTcM5PoFEncWlzaUpjLXNTMlU/view">Advertising</a> <a href="http://digital.olivesoftware.com/Olive/APA/ColbyCollege/default.aspx#panel=home">Archives</a> </p>
+		<span class = "social" >
+		<a href="https://www.facebook.com/thecolbyecho/">
+		<img src="images/facebook.png" alt="Facebook" title="Connect with The Colby Echo on Facebook"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://twitter.com/thecolbyecho">
+		<img src="images/twitter.png" alt="twitter" title="Connect with The Colby Echo on Twitter"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://www.youtube.com/channel/UC7VcREEoGMibDtK2fPX9LDg">
+		<img src="images/youtube.png" alt="Youtube" title="Find The Colby Echo on Youtube"
+		width="30" height="30"/>
+		</a>
+		</span>
+		
+		</span>
+		
+
+		<h1> <img src="images/miller.jpg" alt="miller" width="42" height="140.5"/> <a href="homepageBrit.html"> The Colby Echo </a> </h1>
+		
+		<h2>Published by the students of Colby College since 1877</h2>
+		
+		<!-- code for top menu begins -->
+		<!-- div for menu starts -->
+		<div class="menu">
+		<ul>
+  			<li><a href="homepageBrit.html">HOME</a></li>
+  			<!-- dropdown menu div starts-->
+  			<li> <div class ="dropdown"> <a  class="dropbtn" onclick= "aboutMenu()" style="display: block;" >ABOUT</a>
+  				<!-- dropdown menu content div starts-->
+  				<div id= "myDropdown" class="dropdown-content">
+  					<a class="dropdown-content" href="aboutpage.html"> About Us </a>
+  					<a class="dropdown-content" href="aboutpage.html"> The Team </a>
+  					<a class="dropdown-content" href="contactus.html"> Contact Us </a>
+  					<a class="dropdown-content" href="submitopinion.html"> Submit an Opinion </a>
+  					<a class="dropdown-content" href="http://digital.olivesoftware.com/Olive/APA/ColbyCollege/default.aspx#panel=home""> Archives </a>
+  				</div>
+  				<!-- dropdown menu content div end-->
+  			</div>
+  			<!-- dropdown about menu  div ends-->
+  			</li>
+  			<!-- dropdown menu div ends-->
+  			<li><a href="news.html">NEWS</a></li>
+  			<li><a href="opinions.html">OPINION</a></li>
+  			<li><a href="features.html">FEATURES</a></li>
+  			<li><a href="local.html">LOCAL</a></li>
+  			<li><a href="art.html">ARTS AND ENTERTAINMENT</a></li>
+  			<li><a href= "sports.html">SPORTS</a></li>
+		</ul>
+		</div>
+		<!-- code for top menu ends -->
+		
+		<!-- code for side story 1-->
+		<div class = "sideStory"> 
+		<h3> <a href="article.php"> Professors debate partisanship in the classroom </a> </h3>
+		<p class = "snippet"> The controversial presidential election of Donald Trump has sparked a vigorous backlash in the country, noticeably on...</p>
+		<p class = "date"> March 9, 2017 </p>
+		</div>
+		<!-- code for side story 1 ends-->
+		
+		<!-- code for feature story -->
+		<div class = "featureStory">
+		<h3> <img src="images/waterville.jpg" alt="miller" width="90%" height="266"/> <a> Community rethinks bar nights after over 20 citations </a> </h3>
+		<p class = "subTitleFront"> Thursday nights, dubbed "Bar Nights," are a revered tradition among students.</p>
+		<p class = "date"> March 9, 2017 </p>
+		</div>
+		<!-- code for feature story ends-->
+		
+		<div class = "rightSection"> 
+		<!-- code for right side story 1-->
+		<div class = "rightStory"> 
+		<p class = "topic"> NEWS: </p>
+		<h3> <a> Colby students win trophies at hackathon </a> </h3>
+		<p class = "date"> March 2, 2017 </p>
+		</div>
+		<!-- code for right side story 1 ends-->
+		
+		<!-- code for right side story 2-->
+		<div class = "rightStory"> 
+		<p class = "topic"> EDITOR'S PICK: </p>
+		<h3> <a> Boulos donation to help fund athletic complex </a> </h3>
+		<p class = "date"> March 2, 2017 </p>
+		</div>
+		<!-- code for right side story 3 ends-->
+		
+		<!-- code for right side story 3-->
+		<div class = "rightStory"> 
+		<p class = "topic"> EDITORIAL: </p>
+		<h3> <a> Health care reform: Trump&#39s ticking time bomb </a> </h3>
+		<p class = "date"> March 2, 2017 </p>
+		</div>
+		<!-- code for right side story 3 ends-->
+		</div>
+		<!-- end right section-->
+		
+		<!-- start code for side bar -->
+		<div class='rightbar'>
+		<h3> Search </h3>
+		<script>
+		//Start ajax code for search bar
+			function showHint(str) {
+				if (str.length == 0) { 
+					document.getElementById("suggestions").innerHTML = "";
+					return;
+				} else {
+					var xmlhttp = new XMLHttpRequest();
+					xmlhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("suggestions").innerHTML = this.responseText;
+						}
+					};
+					xmlhttp.open("GET", "echosuggestions.php?q=" + str, true);
+					xmlhttp.send();
+				}
+			}
+		//End ajax code for search bar
+		</script>
+
+
+		<form id=search action="searchecho.php" method="get"> 
+		<!--Search bar!-->
+		<input type="text" onkeyup="showHint(this.value)" name="search" placeholder="Search for an article">
+		<input type="submit" value="Search" />
+		</form>
+		
+		<p>Suggestions to search: <span id="suggestions"></span></p>
+		<!--End search bar!-->
+		
+<!-- InstaWidget -->
+	<a href="https://instawidget.net/v/user/colbycollege" id="link-afa7ce4466dcadeae952297204aaa1d45c9634d6cb016385e659f40de4364cdb">@colbycollege</a>
+	<script src="https://instawidget.net/js/instawidget.js?u=afa7ce4466dcadeae952297204aaa1d45c9634d6cb016385e659f40de4364cdb&width=230px"></script> 
+		<div class='topStories'>
+		<h3> Latest Stories </h3>
+		
+			<ol>   
+				<li> <a>Community Rethinks Bar Nights after over 20 Citations </a> </li>
+				<li> <a>Boulos Donation to Help Fund Athletic Complex </a> </li>
+				<li> <a>Professors Debate Partisanship in the Classroom </a> </li>
+				<li> <a>Colby Students Win Trophies at Hackathon </a></li>
+				<li> <a>Health Care Reform: Trumps Ticking Timebomb </a> </li>
+			</ol>
+		</div>
+		<span class='head'>Tweets </span>
+		<br>
+		<a class="twitter-timeline" href="https://twitter.com/thecolbyecho" data-tweet-limit="3">Tweets by thecolbyecho</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<br><br>
+		<span class='head'>Follow <i>The Echo</i> on Social Media!</span>
+		<br><br>
+		<a href="https://www.facebook.com/thecolbyecho/">
+		<img src="images/facebook.png" alt="Facebook" title="Connect with The Colby Echo on Facebook"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://twitter.com/thecolbyecho">
+		<img src="images/twitter.png" alt="twitter" title="Connect with The Colby Echo on Twitter"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://www.youtube.com/channel/UC7VcREEoGMibDtK2fPX9LDg">
+		<img src="images/youtube.png" alt="Youtube" title="Find The Colby Echo on Youtube"
+		width="30" height="30"/>
+		</a>
+		
+		<br><br>
+		<a href="https://drive.google.com/file/d/0B1dTcM5PoFEncWlzaUpjLXNTMlU/view">
+		<img src="images/echoad.png" alt="Insert Ad Here" width="200" height="200" 
+		title="Submit an ad to be featured on the Colby Echo!"/>
+		</a>
+		</div>
+		<!-- end code for side bar -->
+		
+		<!-- start code for news section -->
+		<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">News</p>
+		</div>
+
+		<!-- start article 1 -->
+		<div class = "mainSection">
+		
+		<table>
+  			<tr>
+    			<th>News</th>
+  			</tr>
+  		</table>
+		
+		<h3> <a> Class of 2021 shatters previous admission records </a> </h3>
+		<p class = "byline"> by <a>Kiernan Somers </a> </p>
+		<p class = "byline"> April 20, 2017 </p>
+			<p>
+				The Colby College Office of Admissions and Financial Aid received a record high 
+				number of applicants for the Class of 2021, leading to a 16 percent acceptance 
+				rate, the lowest in school history. The College received 11,190 applications, 
+				a 14 percent surge from applications for the Class of 2020. The College has 
+				aggressively pursued prospective students from across the country...
+			</p>
+		</div>
+		<!-- end article 1 -->
+		</div>
+		<!-- end news section -->
+		
+		<!-- start code for festures section -->
+	<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">Features</p>
+		</div>
+		
+		<!-- start article 1 -->
+		<div class = "mainSection">
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<table>
+  			<tr>
+    			<th>Features</th>
+  			</tr>
+  		</table>
+		<h3> <a href="aboutpage.html"><img src="images/portland.jpg" alt="portland" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+		<h3> <a> The best restaurants, breweries, trails, and sightseeing destinations in Portland, ME </a> </h3>
+			<p class = "byline"> by <a>Ethan Schuler </a> </p>
+			<p class = "byline"> April 27, 2017 </p>
+			<p>
+				Portland is one of the top places that comes up when people talk about cities 
+				anywhere near Colby. Its hour-long drive from Colby makes it a tough place to 
+				go for a quick meal or visit, and a lot of times it is simply a place to pass 
+				by on the way to Boston or a place to drive to...
+			</p>
+		</div>
+		<!-- text section -->
+		</div>
+		<!-- end article 1 -->
+		</div>
+		<!--end festures section-->
+		
+		<!-- code for main page section starts -->
+	<div class="subpageContent">
+	<!-- start code for news section -->
+	<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">Local</p>
+		</div>
+		<!-- start article 1 -->
+		<div class = "mainSection">
+		
+		<table>
+  			<tr>
+    			<th>Local</th>
+  			</tr>
+  		</table>
+		
+		<h3> <a> Green Spot owners discuss evolution of cherished business </a> </h3>
+		<p class = "byline"> by <a>Grant Alenson </a> </p>
+		<p class = "byline"> April 27, 2017 </p>
+			<p>
+				For Tanya and Brenda Athanus what started out as a plan to spend one more 
+				college summer on the Belgrade Lakes transformed into a business that has 
+				now been around for 41 years. The Athanus sisters co-own The Green Spot, 
+				located at 818 Kennedy Memorial Drive in Oakland. The yellow and green building 
+				with a lobster on the side is...
+			</p>
+		</div>
+		<!-- end article 1 -->
+		</div>
+		<!--end locals section-->
+		
+		
+		<!--start code for opinions sections-->
+		<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">Opinions</p>
+		</div>
+		<!-- start article 1 -->
+		<div class = "mainSection">
+		
+		<table>
+  			<tr>
+    			<th>Opinions</th>
+  			</tr>
+  		</table>
+		
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<h3> <a href="aboutpage.html"><img src="images/alg.jpg" alt="facebook algorithm" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+			<h3>  <a> Blackbox algorithms: the modern-day Plato's cave</a> </h3>
+			<!-- <p class = "subsectionHead"> <a class= "hvr-sweep-to-right"> <span> News </span> </a> </p> -->
+			<p class = "byline"> by <a>Caroline Ferguson </a> </p>
+			<p class = "byline"> April 27, 2017 </p>
+			<p>
+				The internet world in which we currently live is perfect. As social media users, 
+				we wield an immense amount of power to completely tailor who we are in our ability
+				 to pick and choose what we want the world to see of us. Our Facebooks, Twitters, 
+				 Instagrams, Soundclouds, etc. essentially become highlight reels presentations of
+				  perfected characters and personas we have...
+			</p>
+		<!-- end text section -->
+		</div>
+		</div>
+		<!-- end article 1 -->
+		</div>
+		<!-- end opinions -->
+		
+		<!-- start code for art section -->
+		<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">Arts & Entertainment</p>
+		</div>
+		<!-- start article 1 -->
+		<div class = "mainSection">
+		
+		<table>
+  			<tr>
+    			<th>Arts</th>
+  			</tr>
+  		</table>
+		
+		<h3> <a> 2017 Roberts Road lineup revealed in video </a> </h3>
+		<p class = "byline"> by <a>Cleo Aukland </a> </p>
+		<p class = "byline"> April 27, 2017 </p>
+			<p>
+				Last week, the Student Programming Board, SPB, released the long-awaited 
+				lineup for the annual Roberts Road spring festival in a video made by Palmer
+				 Taylor &#39 17, Riley Meidell &#39 18 and David Martin &#39 19. The artists performing 
+				 next week at the festival are D.R.A.M. feat. Daff, with special guests Kap 
+				 Slap and Jimi Tents. The video featured an old-school boombox and ...
+			</p>
+		</div>
+		<!-- end article 1 -->
+		</div>
+		<!--end code for art section-->
+		
+		<!-- start code for sports section -->
+	<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">Sports</p>
+		</div>
+		<!-- start article 2 -->
+		<div class = "mainSection">
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<table>
+  			<tr>
+    			<th>Sports</th>
+  			</tr>
+  		</table>
+		<h3> <a href="aboutpage.html"><img src="images/tennis.jpg" alt="miller" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+			<h3>  <a> Men's and women's tennis come up short this weekend</a> </h3>
+			<!-- <p class = "subsectionHead"> <a class= "hvr-sweep-to-right"> <span> News </span> </a> </p> -->
+			<p class = "byline"> by <a>John Steenrod </a> </p>
+			<p class = "byline"> April 27, 2017 </p>
+			<p>
+				Last week the Colby men&#39s tennis team hosted Bowdoin, and both the men&#39s and 
+				women&#39s teams visited Williams. The Williams match marked the end of NESCAC 
+				competition for the men, while the women still had Bates on Tuesday. On Thursday, 
+				fourth-ranked Bowdoin defeated Colby&#39s men&#39s team, ranked 32nd, 7-2. Colby&#39s two 
+				wins came from Vlad Murad &#39 17 and Scott Altmeyer...
+			</p>
+		<!-- end text section -->
+		</div>
+		</div>
+		<!-- end article 2 -->
+		</div>
+		<!--end sports section-->
+		
+		<!-- start footer -->
+		<div class="footer">
+			<h1> The Colby Echo </h1>
+ 			<hr>
+			<p>Copyright &#169 2017 - The Colby Echo</p>
+			<p> Designed by Brit Biddle '19 and Brandon Troisi '19</p>
+			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/w3c-html.png" alt="Valid HTML5" /></a>
+			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/w3c-css.png" alt="Valid CSS" /></a>
+		</div>
+		<!-- end footer -->
+		
+	</body>
+	
+</html>

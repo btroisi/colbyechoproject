@@ -1,0 +1,317 @@
+/* 
+file: homepage.css
+Written by: Brit Biddle
+March 14, 2017
+CS325 Final Project
+ */
+
+h1{
+
+	color: #0E1961;
+	font-family: "Baskerville";
+	text-align: center;
+	font-size: 58pt;
+	font-weight: normal;
+	margin-bottom: 2px;
+	margin-top: 4px;
+}
+p {
+	line-height: 160%;
+}
+
+h1 a{
+	text-decoration: none;
+	color: #0E1961;
+}
+
+
+h2{
+	font-family: "Baskerville";
+	
+	font-size: 12pt;
+	text-align: center;
+	font-weight: normal;
+}
+
+h3{
+	font-family: "Baskerville";
+	font-weight: normal;
+	font-size: 20pt;
+	margin-bottom: 0px;
+	color: #0E1961;
+}
+
+h3 a:visited {
+	color: #0E1961;
+}
+
+h3 a:hover{
+	color: #0E1961;
+	text-decoration: underline;
+}
+
+.featureStory {
+	float: left;
+	width:40%;
+	height: 420px;
+	border-bottom: 1px solid #cdd1d6;
+	border-left: 1px solid #cdd1d6;
+	border-right: 1px solid #cdd1d6;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 0px;
+	position: aboslute;
+
+}
+
+.sideStory {
+	float: left;
+	width:15%;
+	height: 420px;
+	border-bottom: 1px solid #cdd1d6;
+	border-left: 1px solid #cdd1d6;
+	border-right: 1px solid #cdd1d6;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 0px;
+	position: aboslute;
+
+}
+
+.snippet {
+	font-family: Times New Roman;
+	font-weight: normal;
+	font-size: 14pt;
+	color: #60646b;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	position: aboslute;
+}
+
+.rightStory {
+	height: 129px;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #cdd1d6;
+	position: aboslute;
+
+}
+
+.rightStory h3 {
+	font-family: "Baskerville";
+	font-weight: normal;
+	font-size: 15pt;
+	margin-bottom: 0px;
+	color: #0E1961;
+}
+
+.topic {
+	font-family: Times New Roman;
+	font-weight: bold;
+	font-size: 8pt;
+	margin-bottom: 0px;
+	color: #0E1961;
+}
+
+.rightSection {
+	float: left;
+	width:17.5%;
+	border-left: 1px solid #cdd1d6;
+	
+	border-right: 1px solid #cdd1d6;
+	position: aboslute;
+	z-index: 0;
+	
+}
+
+.date {
+	font-family: Times New Roman;
+	font-weight: normal;
+	font-size: 8pt;
+	color: #60646b;
+	text-align: right;
+}
+
+.subTitleFront {
+	font-family: Times New Roman;
+	font-weight: normal;
+	font-size: 10pt;
+	color: #60646b;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	
+}
+
+.headText{
+	background-color: white;
+	color: #0E1961;
+	font-family: Times New Roman;
+	text-align: left;
+	word-spacing: 30px;
+	border-bottom: 2px solid #cdd1d6;
+	padding-bottom: 8px;
+}
+
+.headText a:hover {
+	text-decoration: underline;
+}
+
+.headText a:visited {
+	text-decoration: none;
+	color: #0E1961;
+}
+
+.imgctr {
+	text-align: center;
+    display: block; 
+}
+
+.social {
+	position: absolute;
+    top:0;
+    right:0;
+}
+
+
+.topHead {
+	
+ 	text-align: left;
+ 	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: grey;
+}
+
+
+.menu{
+	width: 100%;
+    height: 50px;
+}
+/*  make menu bar */
+.menu ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width:100%;
+}
+
+.menu li {
+	float: left;
+	text-align: center; 
+	border-bottom: 1px solid #0E1961;
+	border-top: 1px solid #0E1961;
+}
+
+.menu li a {
+    display: block;
+    color: #0E1961;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: Times New Roman;
+}
+
+/* Change the menu link color on hover */
+.menu li a:hover {
+    background-color: #0E1961;
+    color: white;
+}
+
+/* dropdown menu code for about section */
+
+/* Dropdown Button */
+.dropbtn {
+    
+    /* 
+color: white;
+    padding: 16px;
+    font-size: 16px;
+ */
+    border: none;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: white;
+    display: none;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover #f1f1f1 */
+.dropdown-content a:hover {
+	background-color: #cdd1d6;
+	color: black;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* footer */
+.footer {
+	background-color: #0E1961;
+	padding:10px;
+	/* display:block; */
+	float:left;
+	
+    /* 
+bottom: 0;
+    left:0;
+ */
+    width:99%;
+    
+    
+    float:left;
+}
+
+.footerText {
+	word-spacing: 30px;
+	text-decoration: none; 
+}
+
+.footer p{
+	color:white;
+	font-family: "Baskerville";
+	
+	
+}
+
+.footer h1{
+	color:white;
+	font-size: 38pt;
+	text-align:left;
+	font-family: "Baskerville";
+}
+
+.footer a:visited{
+	color:white;
+	text-decoration: none; 
+}
+
+
+
+

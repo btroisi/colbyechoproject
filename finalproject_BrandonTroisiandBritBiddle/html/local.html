@@ -1,0 +1,307 @@
+<!-- 
+file: local.html 
+Written by: Brit Biddle
+April 30, 2017
+CS325 Final Project
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<link href="sidebar.css" type="text/css" rel="stylesheet"/>
+	<link href="aboutpage.css" type="text/css" rel="stylesheet"/>
+	<script src="aboutpage.js" type="text/javascript"></script>
+	<link href="homepageBrit.css" type="text/css" rel="stylesheet"/>
+	<!-- link to your script file here -->
+	<script src="echo.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<title> The Colby Echo </title>
+</head>
+
+<body>
+	
+	<!-- 
+		code for top menu begins
+		 -->
+		<span class = "topHead">
+		<p class = "headText"> <a href="aboutpage.html"> About</a> <a href="contactus.html">Contact</a> <a href="https://drive.google.com/file/d/0B1dTcM5PoFEncWlzaUpjLXNTMlU/view">Advertising</a> <a href="http://digital.olivesoftware.com/Olive/APA/ColbyCollege/default.aspx#panel=home">Archives</a> </p>
+		<span class = "social" >
+		<a href="https://www.facebook.com/thecolbyecho/">
+		<img src="images/facebook.png" alt="Facebook" title="Connect with The Colby Echo on Facebook"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://twitter.com/thecolbyecho">
+		<img src="images/twitter.png" alt="twitter" title="Connect with The Colby Echo on Twitter"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://www.youtube.com/channel/UC7VcREEoGMibDtK2fPX9LDg">
+		<img src="images/youtube.png" alt="Youtube" title="Find The Colby Echo on Youtube"
+		width="30" height="30"/>
+		</a>
+		</span>
+		
+		</span>
+		
+
+		<h1> <img src="images/miller.jpg" alt="miller" width="42" height="140.5"/> <a href="homepageBrit.html"> The Colby Echo </a> </h1>
+		
+		<h2>Published by the students of Colby College since 1877</h2>
+		
+		<!-- code for top menu begins -->
+		<!-- div for menu starts -->
+		<div class="menu">
+		<ul>
+  			<li><a href="homepageBrit.html">HOME</a></li>
+  			<!-- dropdown menu div starts-->
+  			<li> <div class ="dropdown"> <a  class="dropbtn" onclick= "aboutMenu()" style="display: block;" >ABOUT</a>
+  				<!-- dropdown menu content div starts-->
+  				<div id= "myDropdown" class="dropdown-content">
+  					<a class="dropdown-content" href="aboutpage.html"> About Us </a>
+  					<a class="dropdown-content" href="aboutpage.html"> The Team </a>
+  					<a class="dropdown-content" href="contactus.html"> Contact Us </a>
+  					<a class="dropdown-content" href="submitopinion.html"> Submit an Opinion </a>
+  					<a class="dropdown-content" href="http://digital.olivesoftware.com/Olive/APA/ColbyCollege/default.aspx#panel=home"> Archives </a>
+  				</div>
+  				<!-- dropdown menu content div end-->
+  			</div>
+  			<!-- dropdown about menu  div ends-->
+  			</li>
+  			<!-- dropdown menu div ends-->
+  			<li><a href="news.html">NEWS</a></li>
+  			<li><a href="opinions.html">OPINION</a></li>
+  			<li><a href="features.html">FEATURES</a></li>
+  			<li><a href="local.html"> LOCAL</a></li>
+  			<li><a href="art.html">ARTS AND ENTERTAINMENT</a></li>
+  			<li><a href="sports.html">SPORTS</a></li>
+		</ul>
+		</div>
+		<!-- code for top menu ends -->
+	
+	<!-- code for main page section starts -->
+	<div class="subpageContent">
+	<!-- start code for news section -->
+	<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">Local</p>
+		</div>
+		<!-- start article 1 -->
+		<div class = "mainSection">
+		
+		<table>
+  			<tr>
+    			<th>Local</th>
+  			</tr>
+  		</table>
+		
+		<h3> <a> Green Spot owners discuss evolution of cherished business </a> </h3>
+		<p class = "byline"> by <a>Grant Alenson </a> </p>
+		<p class = "byline"> April 27, 2017 </p>
+			<p>
+				For Tanya and Brenda Athanus what started out as a plan to spend one more 
+				college summer on the Belgrade Lakes transformed into a business that has 
+				now been around for 41 years. The Athanus sisters co-own The Green Spot, 
+				located at 818 Kennedy Memorial Drive in Oakland. The yellow and green building 
+				with a lobster on the side is...
+			</p>
+		</div>
+		<!-- end article 1 -->
+		
+		<!-- start article 2 -->
+		<div class = "mainSection">
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<h3> <a href="aboutpage.html"><img src="images/joe.jpg" alt="miller" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+			<h3>  <a> Senator Collins eyeing Governor’s seat in 2018 election </a> </h3>
+			<!-- <p class = "subsectionHead"> <a class= "hvr-sweep-to-right"> <span> News </span> </a> </p> -->
+			<p class = "byline"> by <a>Adelaide Bullock </a> </p>
+			<p class = "byline"> April 20, 2017 </p>
+			<p>
+				In an interview with WGAN radio, Maine Senator Susan Collins stated that she 
+				is considering running for Governor of Maine in 2018. “If I were fortunate 
+				enough to be elected…you can work on issues I care a lot about like economic
+				 development, jobs, education. And I would try to heal the state and bring 
+				 people back together, which I think...
+			</p>
+		<!-- end text section -->
+		</div>
+		</div>
+		<!-- end article 2 -->
+		
+		<!-- start article 3 -->
+		<div class = "mainSection">
+		<h3> <a> Senator Mitchell captivates large audience at Colby </a> </h3>
+			<p class = "byline"> by <a>Jonathan Stempel </a> </p>
+			<p class = "byline"> April 13, 2017 </p>
+			<p>
+				Senator George J. Mitchell returned to campus last Thursday to be 
+				interviewed by the Morning Sentinel’s Amy Calder. Over 300 people 
+				including Waterville residents, Colby students and professors filled Lorimer
+				 Chapel to see Mitchell in an emotional discussion that would illicit both 
+				 laughter and tears from the audience. In his introduction, Sandy Maisel, 
+				 the William R. Kenan, Jr. Professor of...
+			</p>
+		</div>
+		<!-- end article 3 -->
+		
+		<!-- start article 4 -->
+		<div class = "mainSection">
+		<h3> <a> Entrepreneurship Expo at the College </a> </h3>
+			<p class = "byline"> by <a>Alessandro Maglione </a> </p>
+			<p class = "byline"> April 13, 2017 </p>
+			<p>
+				Students, alumni and guests came together to watch the Career Center’s 
+				Entrepreneurial Alliance program host their seventh Annual Entrepreneurial 
+				Expo and Business Pitch Competition where Colby’s most ingenious entrepreneurs 
+				battle it out for a chance to win big for their young businesses. The 
+				networking event began early Friday afternoon, where a host of guest 
+				speakers including lawyers, business executives, and...
+			</p>
+		</div>
+		<!-- end article 4 -->
+		
+		<!-- start article 5 -->
+		<div class = "mainSection">
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<h3> <a href="aboutpage.html"><img src="images/dorm.jpg" alt="dorm" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+		<h3> <a> Administrators seek transformations in College’s civic engagement for developing downtown dorm </a> </h3>
+			<p class = "byline"> by <a>Caroline Ferguson </a> </p>
+			<p class = "byline"> April 6, 2017 </p>
+			<p>
+				As further developments continue to be made in the construction of 
+				Colby’s downtown dorm, blueprints and renderings of the residence hall 
+				and floor layouts are expected to be released soon. Yet much of the focus 
+				for Colby Administration is directed towards aspects for which there can 
+				be no blueprints; in determining the specific impact such a move will have on...
+			</p>
+		</div>
+		<!-- end text section -->
+		</div>
+		<!-- end article 5 -->
+		
+		<!-- start article 6 -->
+		<div class = "mainSection">
+		<h3> <a> Doghead: a Colby tradition without an origin </a> </h3>
+			<p class = "byline"> by <a>Grant Alenson </a> </p>
+			<p class = "byline"> March 16, 2017 </p>
+			<p>
+				Prior to the early 2000s Doghead had the possibility of being a weekly 
+				occurrence. In the September 20, 1990 issue of The Colby Echo, Doghead 
+				was a plural event, described simply as an “early-morning party most 
+				notably crafted for the hard-core partier and is named to reference to 
+				biting the head of the dog that bit you the night before.”...
+			</p>
+		</div>
+		<!-- end article 6 -->
+		
+		
+		
+	<!-- end code for news section -->
+	</div>
+	
+	<!-- start code for side bar -->
+	
+		<div class='rightbar'>
+		<h3> Search </h3>
+		<script>
+		//Start ajax code for search bar
+			function showHint(str) {
+				if (str.length == 0) { 
+					document.getElementById("suggestions").innerHTML = "";
+					return;
+				} else {
+					var xmlhttp = new XMLHttpRequest();
+					xmlhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("suggestions").innerHTML = this.responseText;
+						}
+					};
+					xmlhttp.open("GET", "echosuggestions.php?q=" + str, true);
+					xmlhttp.send();
+				}
+			}
+		//End ajax code for search bar
+		</script>
+
+
+		<form id=search action="searchecho.php" method="get"> 
+		<!--Search bar!-->
+		<input type="text" onkeyup="showHint(this.value)" name="search" placeholder="Search for an article">
+		<input type="submit" value="Search" />
+		</form>
+		
+		<p>Suggestions to search: <span id="suggestions"></span></p>
+		<!--End search bar!-->
+<!-- InstaWidget -->
+	<a href="https://instawidget.net/v/user/colbycollege" id="link-afa7ce4466dcadeae952297204aaa1d45c9634d6cb016385e659f40de4364cdb">@colbycollege</a>
+	<script src="https://instawidget.net/js/instawidget.js?u=afa7ce4466dcadeae952297204aaa1d45c9634d6cb016385e659f40de4364cdb&width=230px"></script> 
+		<div class='topStories'>
+		<h3> Latest Stories </h3>
+		
+			<ol>   
+				<li> <a>Community Rethinks Bar Nights after over 20 Citations </a> </li>
+				<li> <a>Boulos Donation to Help Fund Athletic Complex </a> </li>
+				<li> <a>Professors Debate Partisanship in the Classroom </a> </li>
+				<li> <a>Colby Students Win Trophies at Hackathon </a></li>
+				<li> <a>Health Care Reform: Trump's Ticking Timebomb </a> </li>
+			</ol>
+		</div>
+		<span class='head'>Tweets </span>
+		<br>
+		<a class="twitter-timeline" href="https://twitter.com/thecolbyecho" data-tweet-limit="3">Tweets by thecolbyecho</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+		<span class='head'>Follow <i>The Echo</i> on Social Media!</span>
+		<br><br>
+		<a href="https://www.facebook.com/thecolbyecho/">
+		<img src="images/facebook.png" alt="Facebook" title="Connect with The Colby Echo on Facebook"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://twitter.com/thecolbyecho">
+		<img src="images/twitter.png" alt="twitter" title="Connect with The Colby Echo on Twitter"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://www.youtube.com/channel/UC7VcREEoGMibDtK2fPX9LDg">
+		<img src="images/youtube.png" alt="Youtube" title="Find The Colby Echo on Youtube"
+		width="30" height="30"/>
+		</a>
+		
+	
+		<a href="https://drive.google.com/file/d/0B1dTcM5PoFEncWlzaUpjLXNTMlU/view">
+		<img src="images/echoad.png" alt="Insert Ad Here" width="200" height="200" 
+		title="Submit an ad to be featured on the Colby Echo!"/>
+		</a>
+		</div>
+		<!-- end code for side bar -->
+		<!-- start footer -->
+		<div class="footer">
+			<h1> The Colby Echo </h1>
+ 			<hr>
+			<p>Copyright &#169 2017 - The Colby Echo</p>
+			<p> Designed by Brit Biddle '19 and Brandon Troisi '19</p>
+			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/w3c-html.png" alt="Valid HTML5" /></a>
+			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/w3c-css.png" alt="Valid CSS" /></a>
+		</div>
+		<!-- end footer -->
+		<!-- code for main page section ends (everything below menu) -->
+		</div>
+	
+	
+</body>
+
+
+</html>

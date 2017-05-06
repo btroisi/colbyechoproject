@@ -1,0 +1,316 @@
+<!-- 
+file: features.html 
+Written by: Brit Biddle
+April 24, 2017
+CS325 Final Project
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<link href="sidebar.css" type="text/css" rel="stylesheet"/>
+	<link href="aboutpage.css" type="text/css" rel="stylesheet"/>
+	<script src="aboutpage.js" type="text/javascript"></script>
+	<link href="homepageBrit.css" type="text/css" rel="stylesheet"/>
+	<!-- link to your script file here -->
+	<script src="echo.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<title> The Colby Echo </title>
+</head>
+
+<body>
+	
+	<!-- 
+		code for top menu begins
+		 -->
+		<span class = "topHead">
+		<p class = "headText"> <a href="aboutpage.html"> About</a> <a href="contactus.html">Contact</a> <a>Advertising</a> <a>Archives</a> </p>
+		<span class = "social" >
+		<a href="https://www.facebook.com/thecolbyecho/">
+		<img src="images/facebook.png" alt="Facebook" title="Connect with The Colby Echo on Facebook"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://twitter.com/thecolbyecho">
+		<img src="images/twitter.png" alt="twitter" title="Connect with The Colby Echo on Twitter"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://www.youtube.com/channel/UC7VcREEoGMibDtK2fPX9LDg">
+		<img src="images/youtube.png" alt="Youtube" title="Find The Colby Echo on Youtube"
+		width="30" height="30"/>
+		</a>
+		</span>
+		
+		</span>
+		
+
+		<h1> <img src="images/miller.jpg" alt="miller" width="42" height="140.5"/> <a href="homepageBrit.html"> The Colby Echo </a> </h1>
+		
+		<h2>Published by the students of Colby College since 1877</h2>
+		
+		<!-- code for top menu begins -->
+		<!-- div for menu starts -->
+		<div class="menu">
+		<ul>
+  			<li><a href="homepageBrit.html">HOME</a></li>
+  			<!-- dropdown menu div starts-->
+  			<li> <div class ="dropdown"> <a  class="dropbtn" onclick= "aboutMenu()" style="display: block;" >ABOUT</a>
+  				<!-- dropdown menu content div starts-->
+  				<div id= "myDropdown" class="dropdown-content">
+  					<a class="dropdown-content" href="aboutpage.html"> About Us </a>
+  					<a class="dropdown-content" href="aboutpage.html"> The Team </a>
+  					<a class="dropdown-content" href="contactus.html"> Contact Us </a>
+  					<a class="dropdown-content" href="submitopinion.html"> Submit an Opinion </a>
+  					<a class="dropdown-content" href="aboutpage.html"> Archives </a>
+  				</div>
+  				<!-- dropdown menu content div end-->
+  			</div>
+  			<!-- dropdown about menu  div ends-->
+  			</li>
+  			<!-- dropdown menu div ends-->
+  			<li><a href="news.html">NEWS</a></li>
+  			<li><a href="opinions.html">OPINION</a></li>
+  			<li><a href="features.html">FEATURES</a></li>
+  			<li><a href="local.html">LOCAL</a></li>
+  			<li><a href="art.html">ARTS AND ENTERTAINMENT</a></li>
+  			<li><a href="sports.html">SPORTS</a></li>
+		</ul>
+		</div>
+		<!-- code for top menu ends -->
+	
+	<!-- code for main page section starts -->
+	<div class="subpageContent">
+	<!-- start code for news section -->
+	<div class='aboutSection'>
+		<div class = "subTitle">
+		<p class="sectionHead">Features</p>
+		</div>
+		
+		<!-- start article 1 -->
+		<div class = "mainSection">
+		<table>
+  			<tr>
+    			<th>Features</th>
+  			</tr>
+  		</table>
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<h3> <a href="aboutpage.html"><img src="images/portland.jpg" alt="portland" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+		<h3> <a> The best restaurants, breweries, trails, and sightseeing destinations in Portland, ME </a> </h3>
+			<p class = "byline"> by <a>Ethan Schuler </a> </p>
+			<p class = "byline"> April 27, 2017 </p>
+			<p>
+				Portland is one of the top places that comes up when people talk about cities 
+				anywhere near Colby. Its hour-long drive from Colby makes it a tough place to 
+				go for a quick meal or visit, and a lot of times it is simply a place to pass 
+				by on the way to Boston or a place to drive to...
+			</p>
+		</div>
+		<!-- text section -->
+		</div>
+		<!-- end article 1 -->
+		
+		<!-- start article 2 -->
+		<div class = "mainSection">
+		<h3> <a> Colby Senior Spencer Martin awarded Firefighter of the Year </a> </h3>
+			<p class = "byline"> by <a>Caitlin Rogers </a> </p>
+			<p class = "byline"> April 27, 2017 </p>
+			<p>
+				Students, alumni and guests came together to watch the Career Center’s 
+				Entrepreneurial Alliance program host their seventh Annual Entrepreneurial 
+				Expo and Business Pitch Competition where Colby’s most ingenious entrepreneurs 
+				battle it out for a chance to win big for their young businesses. The 
+				networking event began early Friday afternoon, where a host of guest 
+				speakers including lawyers, business executives, and...
+			</p>
+		</div>
+		<!-- end article 2 -->
+		
+		<!-- start article 3 -->
+		<div class = "mainSection">
+		<h3> <a> Faces of Colby: New Printer Brings Joy to Colby Campus </a> </h3>
+			<p class = "byline"> by <a>Bix Komita Moussa </a> </p>
+			<p class = "byline"> April 27, 2017 </p>
+			<p>
+				There is a new printer in Pulver Pavilion, and it arrived just in time 
+				for Admitted Students weekend—yet another reason for the prospective students
+				 to choose Colby. The printer was replaced last Tuesday, after several enfeebled
+				  months. According to Administrative Assistant of Campus Life Danielle Hague, 
+				  it was time. “It seemed like the printer was jamming every other day,” Hague...
+			</p>
+		</div>
+		<!-- end article 3 -->
+		
+		<!-- start article 4 -->
+		<div class = "mainSection">
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<h3> <a href="aboutpage.html"><img src="images/dorm.jpg" alt="dorm" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+		<h3> <a> (Re)Introducing WMHB, Colby’s popular radio station </a> </h3>
+			<p class = "byline"> by <a>Michaela Morris </a> </p>
+			<p class = "byline"> April 20, 2017 </p>
+			<p>
+				On the ground floor of Bob’s, down a hallway and past a bulletin board 
+				littered with radio stickers, lives Colby’s on-campus radio broadcasting
+				 office. WHMB, headed by Sam LeFeber ’17, airs a variety of student-run 
+				 shows all week. Programs range from talk shows and “epic banter” to hour-long 
+				 classic rock jam sessions. Sometimes, if there is a big event on...
+			</p>
+		</div>
+		<!-- end text section -->
+		</div>
+		<!-- end article 4 -->
+		
+		<!-- start article 5 -->
+		<div class = "mainSection">
+		
+		<h3> <a> Organizers of Pig Roast Talk Spring Celebration </a> </h3>
+		<p class = "byline"> by <a>Caitlin Rogers </a> </p>
+		<p class = "byline"> April 20, 2017 </p>
+			<p>
+				As spring comes to Colby, the football team is preparing to host the annual 
+				Pig Roast, a day party centered around roasting  a pig. This year, event 
+				organizers Larry Patrizio ’17 and Corben Davis ’18 are focused on making 
+				the event more inclusive.  Though the football team hosts the Pig Roast 
+				every spring, no one really knows when it started...
+			</p>
+		</div>
+		<!-- end article 5 -->
+		
+		<!-- start article 6 -->
+		<div class = "mainSection">
+		<!-- begin photo section -->
+		<div class = "newsPhoto">
+		<h3> <a href="aboutpage.html"><img src="images/bookbinder.jpg" alt="miller" width="200" height="150"/> </a> </h3>
+		</div>
+		<!-- end photo section -->
+		<!-- begin text section -->
+		<div class = "newsPhotoText">
+			<h3>  <a> Getting to know Chuck Ferguson, Colby's bookbinder </a> </h3>
+			<!-- <p class = "subsectionHead"> <a class= "hvr-sweep-to-right"> <span> News </span> </a> </p> -->
+			<p class = "byline"> by <a>Michaela Morris </a> </p>
+			<p class = "byline"> April 13, 2017 </p>
+			<p>
+				In the basement of Lorimer Chapel, down a brightly-lit hallway, there is a small, 
+				little-known room designated “The Russell Hitchcock Book Bindery.” Scrolls of fabric 
+				line the back walls. Shelves containing jars of paste sit above a bright red backing 
+				press. Tools—scissors, saws, hammers—are hung carefully on corkboards on the left
+				 side of the room, and a large work table...
+			</p>
+		<!-- end text section -->
+		</div>
+		</div>
+		<!-- end article 6 -->
+		
+		
+		
+		
+		
+	<!-- end code for news section -->
+	</div>
+	
+	<!-- start code for side bar -->
+	
+		<div class='rightbar'>
+		<h3> Search </h3>
+		<script>
+		//Start ajax code for search bar
+			function showHint(str) {
+				if (str.length == 0) { 
+					document.getElementById("suggestions").innerHTML = "";
+					return;
+				} else {
+					var xmlhttp = new XMLHttpRequest();
+					xmlhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("suggestions").innerHTML = this.responseText;
+						}
+					};
+					xmlhttp.open("GET", "echosuggestions.php?q=" + str, true);
+					xmlhttp.send();
+				}
+			}
+		//End ajax code for search bar
+		</script>
+
+
+		<form id=search action="searchecho.php" method="get"> 
+		<!--Search bar!-->
+		<input type="text" onkeyup="showHint(this.value)" name="search" placeholder="Search for an article">
+		<input type="submit" value="Search" />
+		</form>
+		
+		<p>Suggestions to search: <span id="suggestions"></span></p>
+		<!--End search bar!-->
+<!-- InstaWidget -->
+	<a href="https://instawidget.net/v/user/colbycollege" id="link-afa7ce4466dcadeae952297204aaa1d45c9634d6cb016385e659f40de4364cdb">@colbycollege</a>
+	<script src="https://instawidget.net/js/instawidget.js?u=afa7ce4466dcadeae952297204aaa1d45c9634d6cb016385e659f40de4364cdb&width=230px"></script> 
+		<div class='topStories'>
+		<h3> Latest Stories </h3>
+		
+			<ol>   
+				<li> <a>Community Rethinks Bar Nights after over 20 Citations </a> </li>
+				<li> <a>Boulos Donation to Help Fund Athletic Complex </a> </li>
+				<li> <a>Professors Debate Partisanship in the Classroom </a> </li>
+				<li> <a>Colby Students Win Trophies at Hackathon </a></li>
+				<li> <a>Health Care Reform: Trump's Ticking Timebomb </a> </li>
+			</ol>
+		</div>
+		<span class='head'>Tweets </span>
+		<br>
+		<a class="twitter-timeline" href="https://twitter.com/thecolbyecho" data-tweet-limit="3">Tweets by thecolbyecho</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+		<span class='head'>Follow <i>The Echo</i> on Social Media!</span>
+		<br><br>
+		<a href="https://www.facebook.com/thecolbyecho/">
+		<img src="images/facebook.png" alt="Facebook" title="Connect with The Colby Echo on Facebook"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://twitter.com/thecolbyecho">
+		<img src="images/twitter.png" alt="twitter" title="Connect with The Colby Echo on Twitter"
+		width="30" height="30"/>
+		</a>
+		
+		<a href="https://www.youtube.com/channel/UC7VcREEoGMibDtK2fPX9LDg">
+		<img src="images/youtube.png" alt="Youtube" title="Find The Colby Echo on Youtube"
+		width="30" height="30"/>
+		</a>
+		
+	
+		<img src="images/ad.jpg" alt="Insert Ad Here" width="200" height="200"/>
+		</div>
+		<!-- end code for side bar -->
+		
+		<!-- start footer -->
+		<div class="footer">
+			<h1> The Colby Echo </h1>
+ 			<hr>
+			<p>Copyright 2017 &#169 - The Colby Echo</p>
+			<p> Designed by Brit Biddle '19 and Brandon Troisi '19</p>
+			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/w3c-html.png" alt="Valid HTML5" /></a>
+			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/w3c-css.png" alt="Valid CSS" /></a>
+		</div>
+		<!-- end footer -->
+		
+		
+		<!-- code for main page section ends (everything below menu) -->
+		</div>
+	
+	
+</body>
+
+
+</html>

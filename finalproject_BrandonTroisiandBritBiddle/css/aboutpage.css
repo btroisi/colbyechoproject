@@ -1,0 +1,127 @@
+/* 
+file: aboutpage.css
+Written by: Brit Biddle
+CS325 Final Project
+ */
+ 
+ 
+/*  main sub page header */
+.aboutSection {
+	float:left;
+	border-top: 1px solid #cdd1d6;
+	border-bottom: 1px solid #cdd1d6;
+	border-right: 1px solid #cdd1d6;
+	padding-top:0px;
+	font: "times new roman";
+	width:77%;
+	
+}
+
+.rightSideSection {
+	width:23%;
+	float:left;
+}
+
+
+.subTitle{
+	border-bottom: 1px solid #cdd1d6;
+	padding:0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-left:2%;
+	
+}
+
+.sectionHead {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: "Baskerville";
+	font-weight: normal;
+	font-size: 32pt;
+	color: #0E1961;
+}
+
+.subsectionHead {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: "Baskerville";
+	font-weight: normal;
+	font-size: 20pt;
+	color: #0E1961;
+}
+
+
+.mainSection{
+	padding-top: .5%;
+	padding-left:2%;
+	padding-right: 1%;
+	border-bottom: 1px solid #cdd1d6;
+	
+}
+
+/* author and date styling */
+.byline {
+	font-family: Times New Roman;
+	font-weight: normal;
+	font-size: 10pt;
+	color: #60646b;
+	text-align: left;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.byline a:hover {
+	text-decoration: underline;
+}
+
+/* article type tag */
+th{
+	background-color:#0E1961;
+	color:white;
+	
+}
+
+.newsPhoto{
+	float: left;
+	width: 30%;
+}
+
+.newsPhotoText{
+	float: left;
+	width: 70%;
+	
+}
+
+/* everything below the menu */
+.subpageContent{
+	/* border-bottom: 1px solid red; */
+	background-color:#cdd1d6;
+	width:100%;
+
+}
+
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+/* 
+.EVERYTHING {
+	border: 7px solid red;
+	
+}
+ */
+
+
+
